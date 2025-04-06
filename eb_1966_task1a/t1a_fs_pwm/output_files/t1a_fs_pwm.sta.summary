@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_50MHz'
+Slack : -1.700
+TNS   : -5.539
+
+Type  : Slow 1200mV 85C Model Setup 'frequency_scaler:b2v_inst|clk_1MHz'
+Slack : -1.428
+TNS   : -21.650
+
+Type  : Slow 1200mV 85C Model Hold 'frequency_scaler:b2v_inst|clk_1MHz'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_50MHz'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -3.000
+TNS   : -9.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'frequency_scaler:b2v_inst|clk_1MHz'
+Slack : -1.000
+TNS   : -23.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_50MHz'
+Slack : -1.465
+TNS   : -4.347
+
+Type  : Slow 1200mV 0C Model Setup 'frequency_scaler:b2v_inst|clk_1MHz'
+Slack : -1.140
+TNS   : -16.674
+
+Type  : Slow 1200mV 0C Model Hold 'frequency_scaler:b2v_inst|clk_1MHz'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_50MHz'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -3.000
+TNS   : -9.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'frequency_scaler:b2v_inst|clk_1MHz'
+Slack : -1.000
+TNS   : -23.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_50MHz'
+Slack : -0.558
+TNS   : -0.812
+
+Type  : Fast 1200mV 0C Model Setup 'frequency_scaler:b2v_inst|clk_1MHz'
+Slack : -0.364
+TNS   : -3.168
+
+Type  : Fast 1200mV 0C Model Hold 'frequency_scaler:b2v_inst|clk_1MHz'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_50MHz'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -3.000
+TNS   : -9.336
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency_scaler:b2v_inst|clk_1MHz'
+Slack : -1.000
+TNS   : -23.000
+
+------------------------------------------------------------

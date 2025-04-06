@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/simulation/modelsim
+vpwm_generator
+Z1 !s110 1728766649
+!i10b 1
+!s100 bSI@RNOCTUk=n4lE27[R^2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IE8?LdeUMUShRbGjb:VQ7F2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1728548628
+8/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code/pwm_generator.v
+F/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code/pwm_generator.v
+!i122 1
+L0 19 66
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1728766649.000000
+!s107 /home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code/pwm_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code|/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code/pwm_generator.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code
+Z8 tCvgOpt 0
+vt1a_fs_pwm_bdf
+R1
+!i10b 1
+!s100 BzDROZiez6483=A91SzkV2
+R2
+Ifj`JeKOX?d7AThbRV7X=H0
+R3
+R0
+w1728297106
+8/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v
+F/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v
+!i122 0
+L0 20 35
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code|/home/maruthi/intelFPGA_lite/20.1/quartus/eb_1966_task1a/t1a_fs_pwm/code/t1a_fs_pwm_bdf.v|
+!i113 1
+R6
+R7
+R8
