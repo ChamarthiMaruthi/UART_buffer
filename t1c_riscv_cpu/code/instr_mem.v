@@ -10,7 +10,8 @@ reg [DATA_WIDTH-1:0] instr_ram [0:MEM_SIZE-1];
 
 initial begin
     //$readmemh("rv32i_book.hex", instr_ram);
-      $readmemh("rv32i_test.hex", instr_ram);
+    $readmemh("rv32i_test.hex", instr_ram);
+		//$readmemh("memory_file.hex", instr_ram);
 end
 
 // word-aligned memory access

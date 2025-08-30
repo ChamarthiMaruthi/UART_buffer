@@ -1,0 +1,68 @@
+# do uart_rx_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying /home/maruthi/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {uart_rx.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:17:39 on Aug 27,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." uart_rx.vo 
+# -- Compiling module uart_rx
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 20:17:39 on Aug 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/t2a_uart/uart_rx/.test {/home/maruthi/intelFPGA_lite/20.1/quartus/t2a_uart/uart_rx/.test/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:17:39 on Aug 27,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/t2a_uart/uart_rx/.test" /home/maruthi/intelFPGA_lite/20.1/quartus/t2a_uart/uart_rx/.test/tb.v 
+# -- Compiling module tb
+# ** Warning: /home/maruthi/intelFPGA_lite/20.1/quartus/t2a_uart/uart_rx/.test/tb.v(45): (vlog-2609) indexed range expression contains whitespace between '+' and ':'.
+# 
+# Top level modules:
+# 	tb
+# End time: 20:17:39 on Aug 27,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" tb 
+# Start time: 20:17:39 on Aug 27,2025
+# Loading work.tb
+# Loading work.uart_rx
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fgets'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: /home/maruthi/intelFPGA_lite/20.1/quartus/t2a_uart/uart_rx/.test/tb.v Line: 31
+# Loading altera_ver.PRIM_GDFF_LOW
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 550000 ns
+# rx_msg: ,exp_msg:e,rx_parity:0,correct_parity:0
+# rx_msg: e,exp_msg:Y,rx_parity:0,correct_parity:0
+# rx_msg: Y,exp_msg:S,rx_parity:0,correct_parity:0
+# rx_msg: S,exp_msg:?,rx_parity:0,correct_parity:1
+# Error(s) encountered, please check your design!
+# ** Note: $stop    : /home/maruthi/intelFPGA_lite/20.1/quartus/t2a_uart/uart_rx/.test/tb.v(120)
+#    Time: 237120 ns  Iteration: 1  Instance: /tb
+# Break in Module tb at /home/maruthi/intelFPGA_lite/20.1/quartus/t2a_uart/uart_rx/.test/tb.v line 120
+# End time: 20:18:03 on Aug 27,2025, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 1

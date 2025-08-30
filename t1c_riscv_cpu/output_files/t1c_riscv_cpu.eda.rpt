@@ -1,5 +1,5 @@
 EDA Netlist Writer report for t1c_riscv_cpu
-Thu Jun 19 19:57:38 2025
+Tue Aug 26 22:50:42 2025
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Jun 19 19:57:38 2025 ;
+; EDA Netlist Writer Status ; Successful - Tue Aug 26 22:50:42 2025 ;
 ; Revision Name             ; t1c_riscv_cpu                         ;
 ; Top-level Entity Name     ; t1c_riscv_cpu                         ;
 ; Family                    ; MAX 10                                ;
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Jun 19 19:57:37 2025
+    Info: Processing started: Tue Aug 26 22:50:41 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off t1c_riscv_cpu -c t1c_riscv_cpu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file t1c_riscv_cpu.vo in folder "/home/maruthi/intelFPGA_lite/20.1/quartus/t1c_riscv_cpu/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 621 megabytes
-    Info: Processing ended: Thu Jun 19 19:57:38 2025
+    Info: Peak virtual memory: 620 megabytes
+    Info: Processing ended: Tue Aug 26 22:50:42 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
