@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Buffer_top
-Mon Sep 15 23:27:05 2025
+Tue Sep 16 23:21:30 2025
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Sep 15 23:27:05 2025       ;
+; Analysis & Synthesis Status     ; Successful - Tue Sep 16 23:21:30 2025       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Buffer_top                                  ;
 ; Top-level Entity Name           ; Buffer_top                                  ;
@@ -208,14 +208,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 61                ;
+; Estimate of Logic utilization (ALMs needed) ; 59                ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 81                ;
+; Combinational ALUT usage for logic          ; 75                ;
 ;     -- 7 input functions                    ; 4                 ;
-;     -- 6 input functions                    ; 22                ;
-;     -- 5 input functions                    ; 21                ;
-;     -- 4 input functions                    ; 9                 ;
-;     -- <=3 input functions                  ; 25                ;
+;     -- 6 input functions                    ; 26                ;
+;     -- 5 input functions                    ; 20                ;
+;     -- 4 input functions                    ; 6                 ;
+;     -- <=3 input functions                  ; 19                ;
 ;                                             ;                   ;
 ; Dedicated logic registers                   ; 87                ;
 ;                                             ;                   ;
@@ -227,8 +227,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; clk_3125_tx~input ;
 ; Maximum fan-out                             ; 63                ;
-; Total fan-out                               ; 744               ;
-; Average fan-out                             ; 2.95              ;
+; Total fan-out                               ; 732               ;
+; Average fan-out                             ; 2.98              ;
 +---------------------------------------------+-------------------+
 
 
@@ -237,12 +237,12 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------+-----------------+--------------+
-; |Buffer_top                               ; 81 (0)              ; 87 (0)                    ; 64                ; 0          ; 38   ; 0            ; |Buffer_top                                                                          ; Buffer_top      ; work         ;
-;    |fifo_tx:tx_fifo_inst|                 ; 24 (24)             ; 31 (31)                   ; 64                ; 0          ; 0    ; 0            ; |Buffer_top|fifo_tx:tx_fifo_inst                                                     ; fifo_tx         ; work         ;
+; |Buffer_top                               ; 75 (0)              ; 87 (0)                    ; 64                ; 0          ; 38   ; 0            ; |Buffer_top                                                                          ; Buffer_top      ; work         ;
+;    |fifo_tx:tx_fifo_inst|                 ; 19 (19)             ; 31 (31)                   ; 64                ; 0          ; 0    ; 0            ; |Buffer_top|fifo_tx:tx_fifo_inst                                                     ; fifo_tx         ; work         ;
 ;       |altsyncram:mem_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 64                ; 0          ; 0    ; 0            ; |Buffer_top|fifo_tx:tx_fifo_inst|altsyncram:mem_rtl_0                                ; altsyncram      ; work         ;
 ;          |altsyncram_6tm1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 64                ; 0          ; 0    ; 0            ; |Buffer_top|fifo_tx:tx_fifo_inst|altsyncram:mem_rtl_0|altsyncram_6tm1:auto_generated ; altsyncram_6tm1 ; work         ;
 ;    |uart_rx:rx_inst|                      ; 29 (29)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |Buffer_top|uart_rx:rx_inst                                                          ; uart_rx         ; work         ;
-;    |uart_tx:tx_inst|                      ; 28 (28)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |Buffer_top|uart_tx:tx_inst                                                          ; uart_tx         ; work         ;
+;    |uart_tx:tx_inst|                      ; 27 (27)             ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |Buffer_top|uart_tx:tx_inst                                                          ; uart_tx         ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -317,11 +317,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 87    ;
-; Number of registers using Synchronous Clear  ; 12    ;
+; Number of registers using Synchronous Clear  ; 9     ;
 ; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 47    ;
+; Number of registers using Clock Enable       ; 43    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -485,28 +485,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 87                          ;
-;     ENA               ; 36                          ;
-;     ENA SCLR          ; 3                           ;
+;     ENA               ; 35                          ;
 ;     ENA SCLR SLD      ; 8                           ;
 ;     SCLR              ; 1                           ;
-;     plain             ; 39                          ;
-; arriav_lcell_comb     ; 81                          ;
+;     plain             ; 43                          ;
+; arriav_lcell_comb     ; 75                          ;
 ;     extend            ; 4                           ;
 ;         7 data inputs ; 4                           ;
-;     normal            ; 72                          ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 9                           ;
-;         5 data inputs ; 21                          ;
-;         6 data inputs ; 22                          ;
-;     shared            ; 5                           ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 4                           ;
+;     normal            ; 71                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 20                          ;
+;         6 data inputs ; 26                          ;
 ; boundary_port         ; 38                          ;
 ; stratixv_ram_block    ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 1.69                        ;
+; Average LUT depth     ; 1.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -525,7 +521,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 15 23:26:58 2025
+    Info: Processing started: Tue Sep 16 23:21:23 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off UART_Buffer -c Buffer_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -600,14 +596,14 @@ Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/Buffer_top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 178 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 172 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 23 output pins
-    Info (21061): Implemented 132 logic cells
+    Info (21061): Implemented 126 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 541 megabytes
-    Info: Processing ended: Mon Sep 15 23:27:05 2025
+    Info: Peak virtual memory: 534 megabytes
+    Info: Processing ended: Tue Sep 16 23:21:30 2025
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:16
 

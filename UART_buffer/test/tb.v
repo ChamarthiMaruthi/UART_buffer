@@ -53,10 +53,6 @@ reg         flag_rx = 0;
 reg         exp_rx_complete = 0;
 
 
-// ===== Test Completion Flags =====
-/*reg tx_test_finished = 0;
-reg rx_test_finished = 0;*/
-
 
 // =================================================================
 // 2. Instantiate Buffer_top (the new DUT)
@@ -103,11 +99,6 @@ endtask
 // 4. TX PATH VERIFICATION LOGIC (Identical to uart_tx_tb)
 // =================================================================
 
-/*initial begin
-	reset = 1;
-	@(posedge clk_3125_tx);
-	reset = 0;
-end*/
 initial begin
     fd_tx = $fopen("data.txt","r");
     while(! $feof(fd_tx)) begin
@@ -116,10 +107,9 @@ initial begin
                 file_data_tx[i_tx] = str_tx[15:8] - 48;
             end
             i_tx = i_tx + 1;
-            msg_tx = file_data_tx[(10*k_tx+1)+:8];
         end
     end
-    //$fclose(fd_tx);
+    $fclose(fd_tx);
 end
 
 always @(msg_tx, parity_type) begin // Parity for TX checker
@@ -146,16 +136,12 @@ endtask
 
 
 initial begin
-    tx_done_exp = 0;
-    /*@(posedge clk_3125_tx)
-    tx_exp = 1;
-    repeat(154)@(negedge clk_3125_tx);*/
     for(y_tx = 0; y_tx < 10; y_tx = y_tx + 1) begin
     	tx_start = 1;
-        msg_tx = file_data_tx[(10*k_tx+1) +: 8];
+        msg_tx = file_data_tx[(11*k_tx+1) +: 8];
         reverse(msg_tx,ft_data);
+        msg_tx = file_data_tx[(10*k_tx+1)+:8];
         wr_en = 1;
-        $display("ft_data : %b",ft_data);
         @(posedge clk_3125_tx);
         wr_en = 0;
         @(posedge clk_3125_tx);
@@ -164,9 +150,6 @@ initial begin
         k_tx = k_tx + 1;
     end
 end
-
-
-
 
 // =================================================================
 // 5. RX PATH VERIFICATION LOGIC (Adapted from uart_rx_tb)

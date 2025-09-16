@@ -42,13 +42,13 @@
 	 tx_done <= 0;
         case(state)
             S_IDLE: begin
-					 $display("Time %0t : Entered S_IDLE state",$time);
+					 //$display("Time %0t : Entered S_IDLE state",$time);
                 clk_counter <= 0;
                 bit_counter <= 0;
 					 rd_en       <= 1'b1;
                 if (tx_start && !ft_empty) begin
-						  $display("Time %0t: S_IDLE -> Loading new byte %02h (ft_empty=%b, rd_en=%b)", 
-                         $time, ft_out, ft_empty, rd_en);
+						  //$display("Time %0t: S_IDLE -> Loading new byte %02h (ft_empty=%b, rd_en=%b)", 
+                         //$time, ft_out, ft_empty, rd_en);
 						  //rd_en   <= 1'b1;
                     //data_reg <= ft_out;
                     //parity_bit_reg <= (^ft_out) ^ parity_type;
@@ -78,7 +78,7 @@
                     end else begin
                         bit_counter <= bit_counter - 1;
                     end
-						  $display("Time: %0t | State: S_DATA | clk_counter = %0d, bit_counter = %0d, tx = %0b", $time, clk_counter, bit_counter, tx);
+						  //$display("Time: %0t | State: S_DATA | clk_counter = %0d, bit_counter = %0d, tx = %0b", $time, clk_counter, bit_counter, tx);
                 end else begin
                     clk_counter <= clk_counter + 1;
                 end

@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Sep 15 23:27:34 2025
+Fitter Status : Successful - Tue Sep 16 23:22:01 2025
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Buffer_top
 Top-level Entity Name : Buffer_top
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 56 / 56,480 ( < 1 % )
-Total registers : 100
+Logic utilization (in ALMs) : 54 / 56,480 ( < 1 % )
+Total registers : 101
 Total pins : 38 / 268 ( 14 % )
 Total virtual pins : 0
 Total block memory bits : 64 / 7,024,640 ( < 1 % )

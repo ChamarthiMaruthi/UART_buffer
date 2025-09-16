@@ -11,67 +11,67 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code {/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code/fifo_tx.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:35 on Sep 15,2025
+# Start time: 23:22:21 on Sep 16,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code" /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code/fifo_tx.v 
 # -- Compiling module fifo_tx
 # 
 # Top level modules:
 # 	fifo_tx
-# End time: 23:29:35 on Sep 15,2025, Elapsed time: 0:00:00
+# End time: 23:22:21 on Sep 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code {/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code/Buffer_top.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:35 on Sep 15,2025
+# Start time: 23:22:21 on Sep 16,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code" /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code/Buffer_top.v 
 # -- Compiling module Buffer_top
 # 
 # Top level modules:
 # 	Buffer_top
-# End time: 23:29:35 on Sep 15,2025, Elapsed time: 0:00:00
+# End time: 23:22:22 on Sep 16,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code {/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code/UART_RX.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:35 on Sep 15,2025
+# Start time: 23:22:22 on Sep 16,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code" /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code/UART_RX.v 
 # -- Compiling module uart_rx
 # 
 # Top level modules:
 # 	uart_rx
-# End time: 23:29:35 on Sep 15,2025, Elapsed time: 0:00:00
+# End time: 23:22:22 on Sep 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code {/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code/UART_TX.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:35 on Sep 15,2025
+# Start time: 23:22:22 on Sep 16,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code" /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/code/UART_TX.v 
 # -- Compiling module uart_tx
 # 
 # Top level modules:
 # 	uart_tx
-# End time: 23:29:35 on Sep 15,2025, Elapsed time: 0:00:00
+# End time: 23:22:22 on Sep 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test {/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:35 on Sep 15,2025
+# Start time: 23:22:22 on Sep 16,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test" /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v 
 # -- Compiling module tb
-# ** Warning: /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v(194): (vlog-2609) indexed range expression contains whitespace between '+' and ':'.
+# ** Warning: /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v(177): (vlog-2609) indexed range expression contains whitespace between '+' and ':'.
 # 
 # Top level modules:
 # 	tb
-# End time: 23:29:35 on Sep 15,2025, Elapsed time: 0:00:00
+# End time: 23:22:22 on Sep 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb 
-# Start time: 23:29:35 on Sep 15,2025
+# Start time: 23:22:22 on Sep 16,2025
 # Loading work.tb
 # Loading work.Buffer_top
 # Loading work.fifo_tx
 # Loading work.uart_tx
 # Loading work.uart_rx
 # ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fgets'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb File: /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v Line: 179
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v Line: 162
 # 
 # add wave *
 # view structure
@@ -79,84 +79,14 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ft_data : 01100101
-# ft_data : 01100101
-# FIFO WRITE: time=160000 data=65 wr_ptr=0 -> new_wr_ptr=1 ft_full=0 ft_empty(before)=1
-# Time 160000 : Entered S_IDLE state
-# FIFO CONSUME+LOAD: time=480000 rd_en=1 dout(valid) before=xx -> next=65 rd_ptr=0 -> 1 wr_ptr=1
-# Time 480000 : Entered S_IDLE state
-# Time 480000: S_IDLE -> Loading new byte xx (ft_empty=0, rd_en=1)
-# Time: 9440000 | State: S_DATA | clk_counter = 13, bit_counter = 7, tx = 0
-# Time: 13920000 | State: S_DATA | clk_counter = 13, bit_counter = 6, tx = 1
-# Time: 18400000 | State: S_DATA | clk_counter = 13, bit_counter = 5, tx = 1
-# Time: 22880000 | State: S_DATA | clk_counter = 13, bit_counter = 4, tx = 0
-# Time: 27360000 | State: S_DATA | clk_counter = 13, bit_counter = 3, tx = 0
-# Time: 31840000 | State: S_DATA | clk_counter = 13, bit_counter = 2, tx = 1
-# Time: 36320000 | State: S_DATA | clk_counter = 13, bit_counter = 1, tx = 0
-# Time: 40800000 | State: S_DATA | clk_counter = 13, bit_counter = 0, tx = 1
 # rx_msg: ,exp_msg:e,rx_parity:0,correct_parity:0
-# ft_data : 00101100
-# ft_data : 00101100
-# FIFO WRITE: time=50080000 data=2c wr_ptr=1 -> new_wr_ptr=2 ft_full=0 ft_empty(before)=1
-# Time 50400000 : Entered S_IDLE state
-# Time 50400000: S_IDLE -> Loading new byte 65 (ft_empty=0, rd_en=0)
-# FIFO CONSUME+LOAD: time=50720000 rd_en=1 dout(valid) before=65 -> next=2c rd_ptr=1 -> 2 wr_ptr=2
-# Time: 59360000 | State: S_DATA | clk_counter = 13, bit_counter = 7, tx = 0
-# Time: 63840000 | State: S_DATA | clk_counter = 13, bit_counter = 6, tx = 0
-# Time: 68320000 | State: S_DATA | clk_counter = 13, bit_counter = 5, tx = 1
-# Time: 72800000 | State: S_DATA | clk_counter = 13, bit_counter = 4, tx = 0
-# Time: 77280000 | State: S_DATA | clk_counter = 13, bit_counter = 3, tx = 1
-# Time: 81760000 | State: S_DATA | clk_counter = 13, bit_counter = 2, tx = 1
-# Time: 86240000 | State: S_DATA | clk_counter = 13, bit_counter = 1, tx = 0
-# Time: 90720000 | State: S_DATA | clk_counter = 13, bit_counter = 0, tx = 0
 # rx_msg: e,exp_msg:Y,rx_parity:0,correct_parity:0
-# ft_data : 10010100
-# ft_data : 10010100
-# FIFO WRITE: time=100000000 data=94 wr_ptr=2 -> new_wr_ptr=3 ft_full=0 ft_empty(before)=1
-# Time 100320000 : Entered S_IDLE state
-# Time 100320000: S_IDLE -> Loading new byte 2c (ft_empty=0, rd_en=0)
-# FIFO CONSUME+LOAD: time=100640000 rd_en=1 dout(valid) before=2c -> next=94 rd_ptr=2 -> 3 wr_ptr=3
-# Time: 109280000 | State: S_DATA | clk_counter = 13, bit_counter = 7, tx = 1
-# Time: 113760000 | State: S_DATA | clk_counter = 13, bit_counter = 6, tx = 0
-# Time: 118240000 | State: S_DATA | clk_counter = 13, bit_counter = 5, tx = 0
-# Time: 122720000 | State: S_DATA | clk_counter = 13, bit_counter = 4, tx = 1
-# Time: 127200000 | State: S_DATA | clk_counter = 13, bit_counter = 3, tx = 0
-# Time: 131680000 | State: S_DATA | clk_counter = 13, bit_counter = 2, tx = 1
-# Time: 136160000 | State: S_DATA | clk_counter = 13, bit_counter = 1, tx = 0
-# Time: 140640000 | State: S_DATA | clk_counter = 13, bit_counter = 0, tx = 0
 # rx_msg: Y,exp_msg:S,rx_parity:0,correct_parity:0
-# ft_data : 01001000
-# ft_data : 01001000
-# FIFO WRITE: time=149920000 data=48 wr_ptr=3 -> new_wr_ptr=4 ft_full=0 ft_empty(before)=1
-# Time 150240000 : Entered S_IDLE state
-# Time 150240000: S_IDLE -> Loading new byte 94 (ft_empty=0, rd_en=0)
-# FIFO CONSUME+LOAD: time=150560000 rd_en=1 dout(valid) before=94 -> next=48 rd_ptr=3 -> 4 wr_ptr=4
-# Time: 159200000 | State: S_DATA | clk_counter = 13, bit_counter = 7, tx = 0
-# Time: 163680000 | State: S_DATA | clk_counter = 13, bit_counter = 6, tx = 1
-# Time: 168160000 | State: S_DATA | clk_counter = 13, bit_counter = 5, tx = 0
-# Time: 172640000 | State: S_DATA | clk_counter = 13, bit_counter = 4, tx = 0
-# Time: 177120000 | State: S_DATA | clk_counter = 13, bit_counter = 3, tx = 1
-# Time: 181600000 | State: S_DATA | clk_counter = 13, bit_counter = 2, tx = 0
-# Time: 186080000 | State: S_DATA | clk_counter = 13, bit_counter = 1, tx = 0
-# Time: 190560000 | State: S_DATA | clk_counter = 13, bit_counter = 0, tx = 0
 # rx_msg: S,exp_msg:?,rx_parity:0,correct_parity:1
-# ft_data : 11100000
-# ft_data : 11100000
-# FIFO WRITE: time=199840000 data=e0 wr_ptr=4 -> new_wr_ptr=5 ft_full=0 ft_empty(before)=1
-# TX : No errors encountered, congratulations!
-# Time 200160000 : Entered S_IDLE state
-# Time 200160000: S_IDLE -> Loading new byte 48 (ft_empty=0, rd_en=0)
-# FIFO CONSUME+LOAD: time=200480000 rd_en=1 dout(valid) before=48 -> next=e0 rd_ptr=4 -> 5 wr_ptr=5
-# Time: 209120000 | State: S_DATA | clk_counter = 13, bit_counter = 7, tx = 1
-# Time: 213600000 | State: S_DATA | clk_counter = 13, bit_counter = 6, tx = 1
-# Time: 218080000 | State: S_DATA | clk_counter = 13, bit_counter = 5, tx = 1
-# Time: 222560000 | State: S_DATA | clk_counter = 13, bit_counter = 4, tx = 0
-# Time: 227040000 | State: S_DATA | clk_counter = 13, bit_counter = 3, tx = 0
-# Time: 231520000 | State: S_DATA | clk_counter = 13, bit_counter = 2, tx = 0
-# Time: 236000000 | State: S_DATA | clk_counter = 13, bit_counter = 1, tx = 0
+# TX : Error(s) encountered, please check your design!
 # RX : No errors encountered, congratulations!
-# ** Note: $stop    : /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v(315)
+# ** Note: $stop    : /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v(298)
 #    Time: 237120 ns  Iteration: 1  Instance: /tb
-# Break in Module tb at /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v line 315
-# End time: 23:40:01 on Sep 15,2025, Elapsed time: 0:10:26
+# Break in Module tb at /home/maruthi/intelFPGA_lite/20.1/quartus/UART_buffer/test/tb.v line 298
+# End time: 23:22:43 on Sep 16,2025, Elapsed time: 0:00:21
 # Errors: 0, Warnings: 1
