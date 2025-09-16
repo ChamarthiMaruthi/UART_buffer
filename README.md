@@ -1,30 +1,60 @@
-<<<<<<< HEAD
-# EcoMender Bot – e-Yantra 2024
+# UART with FIFO Buffer
 
-These files are part of our submission for the **e-Yantra Robotics Competition 2024**, under the theme **EcoMender Bot**.
+## 📌 Project Overview
+This project implements a **UART (Universal Asynchronous Receiver/Transmitter) with FIFO buffers** for both transmission (TX) and reception (RX).  
+The design is written in **Verilog HDL** and simulated using **ModelSim / QuestaSim**. It supports:
+- Transmitting and receiving serial data.
+- FIFO buffering to handle back-to-back data streams.
+- Configurable parity.
+- Verified testbench with multiple data inputs.
 
-The project involves Verilog HDL-based design and simulation on an Intel FPGA. Tasks include frequency scaling, PWM generation, and color detection using FSM logic interfaced with a simulated TCS3200 color sensor.
-
-## 📁 Folder Structure
-
-- `src/` – Verilog source files
-- `tb/` – Testbenches
-- `sim/` – Simulation outputs (ModelSim)
-- `waveform/` – Screenshots of simulation waveforms
-- `report/` – Project documentation
-- `README.md` – This file
-
-## 🛠 Tools Used
-
-- Intel Quartus Prime
-- ModelSim
-- Verilog HDL
-
-## 📌 Note
-
-These files are **strictly related to the e-Yantra competition** and follow the structure and format as per submission guidelines.
+This project was developed as part of my exploration into digital design, FPGA development, and verification.
 
 ---
-=======
-# UART_buffer
->>>>>>> b4a8a971b5151f83e4329f3441a5d429d7b92118
+
+## ⚡ Features
+- **UART TX and RX modules**
+- **FIFO buffers** for smooth data handling
+- **Configurable parity bit**
+- **Testbench** for functional verification
+
+---
+
+## 🏗️ Project Structure
+```
+├── src/
+│   ├── uart_tx.v
+│   ├── uart_rx.v
+│   ├── fifo_tx.v
+│   ├── fifo_rx.v
+│   └── top_module.v
+├── tb/
+│   ├── uart_tb.v
+│   └── test_data.hex
+├── sim/
+│   └── (simulation logs, waveform files, etc.)
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Intel Quartus Prime (for synthesis on FPGA)  
+- ModelSim / QuestaSim (for simulation)  
+- Git  
+
+## 📊 Results
+- ✅ UART TX & RX verified with FIFO buffering.  
+- ✅ Data transmission verified for multiple bytes.  
+- ⚠️ Known issue: FIFO underflow may occur if TX start signal is not aligned (fixed in testbench).  
+
+
+## 👨‍💻 Author
+**Maruthi Chamarthi**  
+- 🎓 NIT Durgapur  
+- 🔬 Interested in FPGA, ASIC, and digital design verification  
+
+---
