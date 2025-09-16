@@ -1,7 +1,0 @@
-
-State Machine - |t1b_cd_fd|state
-Name state.S_GREEN state.S_CLEAR state.S_BLUE state.S_RED 
-state.S_RED 0 0 0 0 
-state.S_BLUE 0 0 1 1 
-state.S_CLEAR 0 1 0 1 
-state.S_GREEN 1 0 0 1 
